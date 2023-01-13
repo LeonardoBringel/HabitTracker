@@ -51,7 +51,10 @@ class _GoalsListWidgetState extends State<GoalsListWidget> {
                 if (widget.weekdayFilter) {
                   return Padding(
                     padding: const EdgeInsets.only(bottom: 10),
-                    child: GoalTileWidget(goal: goals[index]),
+                    child: GoalTileWidget(
+                      goal: goals[index],
+                      isGoalEditable: true,
+                    ),
                   );
                 }
 
